@@ -20,21 +20,29 @@
             padding: 40px 20px;
             text-align: center;
         }
-        h1 {
-            color: #ffffff;
-            margin: 0;
-            font-size: 2.5em;
+        h1 { color: #ffffff; margin: 0; font-size: 2.5em; }
+        .subtitle { color: #b0b0b0; font-size: 1.2em; margin-top: 10px; }
+        .container { max-width: 800px; margin: 40px auto; padding: 0 20px; }
+        
+        /* NEUER STYLE FÜR DEN DETAILS-BUTTON */
+        .btn-details {
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            background-color: #4b0082; /* Lila für Unterscheidung */
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            text-align: center;
+            font-size: 1.1em;
+            transition: background 0.3s;
+            border: 1px solid #6a0dad;
         }
-        .subtitle {
-            color: #b0b0b0;
-            font-size: 1.2em;
-            margin-top: 10px;
-        }
-        .container {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
+        .btn-details:hover { background-color: #6a0dad; }
+
         .app-card {
             background-color: #1e1e1e;
             border-radius: 12px;
@@ -43,27 +51,10 @@
             box-shadow: 0 4px 6px rgba(0,0,0,0.3);
             border-left: 5px solid #008080;
         }
-        .app-card h2 {
-            color: #00e5ff;
-            margin-top: 0;
-            margin-bottom: 5px;
-        }
-        .category {
-            color: #888;
-            font-size: 0.9em;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 15px;
-            display: block;
-        }
-        .features {
-            margin: 15px 0;
-            padding-left: 20px;
-            color: #ccc;
-        }
-        .features li {
-            margin-bottom: 5px;
-        }
+        .app-card h2 { color: #00e5ff; margin-top: 0; margin-bottom: 5px; }
+        .category { color: #888; font-size: 0.9em; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px; display: block; }
+        .features { margin: 15px 0; padding-left: 20px; color: #ccc; }
+        .features li { margin-bottom: 5px; }
         .btn {
             display: inline-block;
             background-color: #008080;
@@ -75,30 +66,10 @@
             margin-top: 15px;
             transition: background 0.3s;
         }
-        .btn:hover {
-            background-color: #00a0a0;
-        }
-        .contact {
-            text-align: center;
-            margin-top: 50px;
-            padding: 30px;
-            background-color: #1e1e1e;
-            border-radius: 12px;
-        }
-        .contact a {
-            color: #00e5ff;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.1em;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            color: #777;
-            font-size: 0.9em;
-            border-top: 1px solid #333;
-            margin-top: 40px;
-        }
+        .btn:hover { background-color: #00a0a0; }
+        .contact { text-align: center; margin-top: 50px; padding: 30px; background-color: #1e1e1e; border-radius: 12px; }
+        .contact a { color: #00e5ff; text-decoration: none; font-weight: bold; font-size: 1.1em; }
+        footer { text-align: center; padding: 20px; color: #777; font-size: 0.9em; border-top: 1px solid #333; margin-top: 40px; }
     </style>
 </head>
 <body>
@@ -110,6 +81,9 @@
 
     <div class="container">
         
+        <!-- HIER IST DER NEUE BUTTON -->
+        <a href="details.html" class="btn-details">📖 Alle App-Details & Installationsanleitungen lesen</a>
+
         <!-- APP 1: DeepSleuth -->
         <div class="app-card">
             <h2>🔍 DeepSleuth</h2>
@@ -133,7 +107,7 @@
                 <li>Funktioniert auf degoogelten Geräten ohne Fehler</li>
                 <li>Unterstützt 14 Sprachen</li>
             </ul>
-            <a href="TaschenRechner-release.apk" class="btn">️ TaschenRechner herunterladen (APK)</a>
+            <a href="TaschenRechner-release.apk" class="btn">⬇️ TaschenRechner herunterladen (APK)</a>
         </div>
 
         <!-- APP 3: Notiz -->
@@ -159,7 +133,7 @@
                 <li>Mehrsprachiger, rechtssicherer Warnhinweis</li>
                 <li>100% Offline, keine Datenerfassung</li>
             </ul>
-            <a href="USB-Waechter-release-signed.apk" class="btn">️ USB-Wächter herunterladen (APK)</a>
+            <a href="USB-Waechter-release-signed.apk" class="btn">⬇️ USB-Wächter herunterladen (APK)</a>
         </div>
 
         <!-- KONTAKT -->
